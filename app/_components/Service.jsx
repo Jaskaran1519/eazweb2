@@ -64,7 +64,7 @@ const Service = () => {
             <div>
               {ishover3 ? null : (
                 <h1 className="text-[1.5rem]  font-semibold   text-primary ">
-                  Vidoe Editing
+                  Video Editing
                 </h1>
               )}
               {ishover3 ? (
