@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Mobilemenu from "./Mobilemenu";
 
 const Header = () => {
   return (
-    <div className="md:w-[80%] mx-auto">
+    <div className="md:px-[10%] mx-auto h-auto  backdrop-blur-sm  filter">
       <div className=" flex justify-between items-center p-3">
         <div>
           <Link href="/">
