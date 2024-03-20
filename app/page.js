@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "./_components/Hero";
 import Header from "./_components/Header";
 import Service from "./_components/Service";
-import Review from "./_components/Review";
 
 const page = () => {
   return (
@@ -10,7 +9,6 @@ const page = () => {
       <Header />
       <Hero />
       <Service />
-      <Review />
     </div>
   );
 };
