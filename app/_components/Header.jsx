@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="md:px-[10%] mx-auto h-auto  backdrop-blur-sm  filter">
+    <div className="md:px-[10%] mx-auto h-auto bg-white bg-opacity-60  backdrop-blur-sm  filter">
       <div className=" flex justify-between items-center p-3">
         <div>
           <Link href="/">
