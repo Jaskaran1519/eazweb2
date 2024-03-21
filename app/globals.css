@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css";
 
 @keyframes infiniteScroll {
   from {
