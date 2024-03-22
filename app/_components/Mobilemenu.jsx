@@ -37,17 +37,29 @@ const Nav = () => {
       <div
         className={`${
           isOpen
-            ? " w-[80%] duration-300 ease-in-out"
-            : "w-0 duration-300 ease-in-out"
-        }  absolute top-0 left-[-10%] h-screen bg-gray-50 `}
+            ? "absolute top-0 left-[-10%]  duration-300 ease-in-out"
+            : "absolute top-0 left-[-100%] duration-300 ease-in-out"
+        }  w-[80%]  h-screen bg-gray-50 p-[10%] `}
       >
-        <Link href="/">Home</Link>
-        <hr />
-        <Link href="/project">Our Work</Link>
-        <hr />
-        <Link href="/about">About Us</Link>
-        <hr />
-        <Link href="/contact">Contact Us</Link>
+        {isOpen && (
+          <div className="text-[2rem]">
+            <Link onClick={() => setIsOpen(!isOpen)} href="/">
+              Home
+            </Link>
+            <hr />
+            <Link onClick={() => setIsOpen(!isOpen)} href="/project">
+              <h1>Our Work</h1>
+            </Link>
+            <hr />
+            <Link onClick={() => setIsOpen(!isOpen)} href="/about">
+              <h1>About Us</h1>
+            </Link>
+            <hr />
+            <Link onClick={() => setIsOpen(!isOpen)} href="/contact">
+              <h1>Contact Us</h1>
+            </Link>
+          </div>
+        )}
       </div>
     </>
   );
