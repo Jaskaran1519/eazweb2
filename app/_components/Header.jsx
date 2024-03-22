@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Mobilemenu from "./Mobilemenu";
 
 const Header = () => {
   return (
@@ -28,13 +29,14 @@ const Header = () => {
             <Link href="/project">Our Work</Link>
           </h3>
         </div>
-        <div>
+        <div className="hidden sm:flex">
           <Link href="/contact">
             <button className="px-3 py-2 bg-primary rounded-lg  text-white hover:bg-hoverprimary hover:text-white duration-200 font-bold">
               Talk to Us
             </button>
           </Link>
         </div>
+        <Mobilemenu />
       </div>
       <hr className="" />
     </div>
