@@ -42,7 +42,7 @@ const Nav = () => {
         }  w-[80%]  h-screen bg-gray-50 p-[10%] `}
       >
         {isOpen && (
-          <div className="text-[2rem]">
+          <div className="text-[1.5rem] leading-loose">
             <Link onClick={() => setIsOpen(!isOpen)} href="/">
               Home
             </Link>

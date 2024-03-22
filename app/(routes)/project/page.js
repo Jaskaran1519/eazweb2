@@ -41,8 +41,8 @@ const Card = ({ title, copy, imageUrl, link }) => {
         className="h-full w-full object-cover absolute top-0 left-0 group-hover:scale-110   transition duration-300 ease-in-out"
       />
       <div className="p-8 absolute bottom-0 w-full text-center opacity-0 group-hover:opacity-100 backdrop-blur-xl hover:bg-primary hover:bg-opacity-25  inset-0 flex flex-col justify-center items-center  transition duration-300 ease-in-out">
-        <h2 className="text-3xl font-bold text-white">{title}</h2>
-        <p className="text-xl text-white font-semibold mt-2">{copy}</p>
+        <h2 className="text-xl font-bold text-white">{title}</h2>
+        <p className="text-md leading-4 text-white  mt-2">{copy}</p>
         <a href={link} target="_blank">
           <button className="mt-4 bg-primary text-white font-bold py-2 px-4 rounded-md hover:bg-hoverprimary transition duration-300 ease-in-out">
             Check Out
