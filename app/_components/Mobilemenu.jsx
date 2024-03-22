@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Nav = () => {
@@ -38,8 +39,16 @@ const Nav = () => {
           isOpen
             ? " w-[80%] duration-300 ease-in-out"
             : "w-0 duration-300 ease-in-out"
-        }  absolute top-0 left-[-10%] h-screen bg-gray-50`}
-      ></div>
+        }  absolute top-0 left-[-10%] h-screen bg-gray-50 `}
+      >
+        <Link href="/">Home</Link>
+        <hr />
+        <Link href="/project">Our Work</Link>
+        <hr />
+        <Link href="/about">About Us</Link>
+        <hr />
+        <Link href="/contact">Contact Us</Link>
+      </div>
     </>
   );
 };
