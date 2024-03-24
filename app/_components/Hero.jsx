@@ -1,5 +1,6 @@
 "use client";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -8,10 +9,10 @@ const Hero = () => {
   return (
     <div className="text-primary">
       <div className="mx-auto  mt-[10vh] md:w-[70%] xl:w-[60%]">
-        <h1 className="text-[3rem] text-center font-bold leading-tight">
+        <h1 className="text-[3rem] text-center  font-semibold font-mono leading-tight">
           We Analyse, Create and Innovate
         </h1>
-        <h2 className=" w-[75%] mt-4 mx-auto text-[1rem] text-center font-light">
+        <h2 className=" w-[75%] hidden md:flex mt-4 mx-auto text-[1rem] text-center font-light">
           nigga why you baby sitting only two or three shots, imma show you how
           to turn it up a knotch. First you take swimming pool full of liquor,
           then you dive in it
@@ -19,7 +20,12 @@ const Hero = () => {
       </div>
       <div className="  mt-5 flex justify-center items-center">
         <div className=" block sm:flex sm:gap-1 lg:gap-8 ">
-          <div className="my-4 hidden scale-100 hover:scale-105 duration-150 lg:flex lg:w-[20vw] lg:h-[20vw] shadow-2xl lg:rounded-xl xl:rounded-[5vh]">
+          <motion.div
+            initial={{ opacity: 0, translateY: 100 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="my-4 animate-fadedown hidden scale-100 hover:scale-105 duration-150 lg:flex lg:w-[20vw] lg:h-[20vw] shadow-2xl lg:rounded-xl xl:rounded-[5vh]"
+          >
             <div className="w-[80%] mx-auto  mt-6">
               <div className="inline-block">
                 <h1 className="text-lg font-semibold inline-block">
@@ -40,8 +46,13 @@ const Hero = () => {
 
               <div className="mt-5  "></div>
             </div>
-          </div>
-          <div className=" overflow-hidden  flex scale-100 hover:scale-105 duration-150 relative my-4  w-[80vw] h-[70vw]  rounded-xl lg:w-[30vw] lg:h-[27vw] xl:h-[23vw] border shadow-2xl xl:rounded-[5vh]">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateY: 100 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
+            className=" overflow-hidden  flex scale-100 hover:scale-105 duration-150 relative my-4  w-[80vw] h-[70vw]  rounded-xl lg:w-[30vw] lg:h-[27vw] xl:h-[23vw] border shadow-2xl xl:rounded-[5vh]"
+          >
             <Image
               src="/centerbox.svg"
               layout="fill"
@@ -90,8 +101,13 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="my-4 overflow-hidden scale-100 hover:scale-105 duration-150  relative  lg:flex lg:w-[20vw] lg:h-[20vw] border  shadow-2xl lg:rounded-xl xl:rounded-[5vh]">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateY: 100 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="my-4 overflow-hidden scale-100 hover:scale-105 duration-150  relative  lg:flex lg:w-[20vw] lg:h-[20vw] border  shadow-2xl lg:rounded-xl xl:rounded-[5vh]"
+          >
             <Image
               src="/rightbox.jpg"
               layout="fill"
@@ -104,7 +120,7 @@ const Hero = () => {
               </h1>
               <ArrowUpRight />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Mobilemenu from "./Mobilemenu";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (

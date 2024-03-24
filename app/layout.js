@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           <motion.div className="m-0">
             {children}
-            <motion.div
+            {/* <motion.div
               className="slide-in"
               initial={{ scaleY: 0 }}
               animate={{ scaleY: 0 }}
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               animate={{ scaleY: 0 }}
               exit={{ scaleY: 0 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            ></motion.div>
+            ></motion.div> */}
             <Footer />
           </motion.div>
         </body>
