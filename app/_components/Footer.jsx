@@ -59,8 +59,7 @@ const Footer = () => {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Social Media Management{" "}
+                      +91 6284607938
                     </a>
                   </li>
 
@@ -69,8 +68,7 @@ const Footer = () => {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      UI/UX Design{" "}
+                      Twitter
                     </a>
                   </li>
 
@@ -79,8 +77,7 @@ const Footer = () => {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Web Development{" "}
+                      Instagram
                     </a>
                   </li>
 
@@ -89,8 +86,7 @@ const Footer = () => {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Video Editing{" "}
+                      Upwork
                     </a>
                   </li>
 
@@ -99,8 +95,7 @@ const Footer = () => {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      SEO Optimisation{" "}
+                      Github
                     </a>
                   </li>
                 </ul>
@@ -121,13 +116,12 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/contact"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Talk to us{" "}
-                    </a>
+                      Talk to us
+                    </Link>
                   </li>
                 </ul>
               </div>
