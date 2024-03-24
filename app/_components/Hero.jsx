@@ -8,16 +8,20 @@ import React, { useState } from "react";
 const Hero = () => {
   return (
     <div className="text-primary">
-      <div className="mx-auto  mt-[10vh] md:w-[70%] xl:w-[60%]">
+      <motion.div
+        initial={{ opacity: 0, translateY: -100 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto  mt-[10vh] md:w-[70%] xl:w-[60%]"
+      >
         <h1 className="text-[3rem] text-center  font-semibold font-mono leading-tight">
           We Analyse, Create and Innovate
         </h1>
         <h2 className=" w-[75%] hidden md:flex mt-4 mx-auto text-[1rem] text-center font-light">
-          nigga why you baby sitting only two or three shots, imma show you how
-          to turn it up a knotch. First you take swimming pool full of liquor,
-          then you dive in it
+          We don't just build websites, we build growth engines. Partner with
+          our design and development squad to elevate your online presence.
         </h2>
-      </div>
+      </motion.div>
       <div className="  mt-5 flex justify-center items-center">
         <div className=" block sm:flex sm:gap-1 lg:gap-8 ">
           <motion.div

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Service = () => {
   const [ishover1, setIshover1] = useState(false);
@@ -11,13 +12,18 @@ const Service = () => {
 
   return (
     <div className="w-[80%] mx-auto md:flex justify-between items-center mt-[5vh] xl:mt-[20vh]">
-      <div className=" w-full sm:w-[30%] ">
+      <motion.div
+        initial={{ opacity: 0, translateY: -100 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5 }}
+        className=" w-full sm:w-[30%] "
+      >
         <h1 className="text-[3rem] font-bold text-primary">Services</h1>
         <h2 className="hidden md:flex">
           We provide all services related to web and social media content
           creation
         </h2>
-      </div>
+      </motion.div>
       <div className=" w-full md:w-[60%] items-center">
         <div className="md:grid grid-cols-9 grid-rows-6 md:w-[50vw] gap-x-2 gap-y-0 relative">
           <div

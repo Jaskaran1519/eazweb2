@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,12 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div className="md:px-[10%] mx-auto h-auto bg-white bg-opacity-60  backdrop-blur-sm  filter">
-      <div className=" flex justify-between items-center p-3">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className=" flex justify-between items-center p-3"
+      >
         <div>
           <Link href="/">
             <Image
@@ -38,7 +44,7 @@ const Header = () => {
           </Link>
         </div>
         <Mobilemenu />
-      </div>
+      </motion.div>
       <hr className="" />
     </div>
   );
