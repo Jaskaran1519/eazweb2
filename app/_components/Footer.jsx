@@ -45,8 +45,8 @@ const Footer = () => {
           </div>
 
           <div className="py-8 lg:py-16 lg:pe-16">
-            <div className="hidden lg:block">
-              <Image src="/logo.png" width={100} height={100} alt="/" />
+            <div className="hidden lg:block -ml-2">
+              <Image src="/logo.png" width={120} height={120} alt="/" />
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -56,10 +56,10 @@ const Footer = () => {
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="tel:+916284607938"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      +91 6284607938
+                      Call us now
                     </a>
                   </li>
 
