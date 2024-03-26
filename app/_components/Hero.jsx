@@ -107,25 +107,27 @@ const Hero = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, translateY: 100 }}
-            animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="my-4 overflow-hidden scale-100 hover:scale-105 duration-150  relative  lg:flex lg:w-[20vw] lg:h-[20vw] border  shadow-2xl lg:rounded-xl xl:rounded-[5vh]"
-          >
-            <Image
-              src="/rightbox.jpg"
-              layout="fill"
-              className="absolute  inset-0  object-cover z-0 "
-              alt="/"
-            />
-            <div className="absolute gap-1 top-5 right-3 flex cursor-pointer">
-              <h1 className="text-lg font-semibold text-primary">
-                All Projects
-              </h1>
-              <ArrowUpRight />
-            </div>
-          </motion.div>
+          <Link href="/project">
+            <motion.div
+              initial={{ opacity: 0, translateY: 100 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="my-4 overflow-hidden scale-100 hover:scale-105 duration-150  relative  lg:flex lg:w-[20vw] lg:h-[20vw] border  shadow-2xl lg:rounded-xl xl:rounded-[5vh]"
+            >
+              <Image
+                src="/rightbox.jpg"
+                layout="fill"
+                className="absolute  inset-0  object-cover z-0 "
+                alt="/"
+              />
+              <div className="absolute gap-1 top-5 right-3 flex cursor-pointer">
+                <h1 className="text-lg font-semibold text-primary">
+                  All Projects
+                </h1>
+                <ArrowUpRight />
+              </div>
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>
