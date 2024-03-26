@@ -11,7 +11,7 @@ const Service = () => {
   const [ishover5, setIshover5] = useState(false);
 
   return (
-    <div className="w-[80%] mx-auto md:flex justify-between items-center mt-[5vh] xl:mt-[20vh]">
+    <div className="non-selectable w-[80%] mx-auto md:flex justify-between items-center mt-[5vh] xl:mt-[20vh]">
       <motion.div
         initial={{ opacity: 0, translateY: -100 }}
         animate={{ opacity: 1, translateY: 0 }}
@@ -25,7 +25,7 @@ const Service = () => {
         </h2>
       </motion.div>
       <div className=" w-full md:w-[60%] items-center">
-        <div className="md:grid grid-cols-9 grid-rows-6 md:w-[50vw] gap-x-2 gap-y-0 relative">
+        <div className="non-selectable md:grid grid-cols-9 grid-rows-6 md:w-[50vw] gap-x-2 gap-y-0 relative">
           <div
             className={`col-span-3 h-[15vh]  text-center flex justify-center items-center my-2 md:h-[15vw] hover:bg-hoverprimary duration-500 row-span-3 bg-opacity-50 backdrop-blur-lg   bg-gray-300  rounded-xl`}
             onMouseEnter={() => setIshover1(true)}
@@ -38,7 +38,7 @@ const Service = () => {
                 </h1>
               )}
               {ishover1 ? (
-                <h2 className="text-[1rem] w-[80%]  mx-auto text-white pt-2">
+                <h2 className=" non-selectable text-[1rem] w-[80%]  mx-auto text-white pt-2">
                   We make industry standard designs, you can check our work
                 </h2>
               ) : null}
@@ -56,7 +56,7 @@ const Service = () => {
                 </h1>
               )}
               {ishover2 ? (
-                <h2 className="text-[1rem] w-[80%]  mx-auto text-white pt-2">
+                <h2 className=" non-selectable text-[1rem] w-[80%]  mx-auto text-white pt-2">
                   Fast, Secure and Attractive website using latest technologies
                 </h2>
               ) : null}
@@ -74,7 +74,7 @@ const Service = () => {
                 </h1>
               )}
               {ishover3 ? (
-                <h2 className="text-[1rem] w-[80%]  mx-auto text-white pt-2">
+                <h2 className="non-selectable text-[1rem] w-[80%]  mx-auto text-white pt-2">
                   Creative Videos and reels editing
                 </h2>
               ) : null}
@@ -87,12 +87,12 @@ const Service = () => {
           >
             <div>
               {ishover4 ? null : (
-                <h1 className="text-[1.5rem]  font-semibold   text-primary ">
+                <h1 className="non-selectable text-[1.5rem]  font-semibold   text-primary ">
                   Social Media Management
                 </h1>
               )}
               {ishover4 ? (
-                <h2 className="text-[1rem] w-[80%]  mx-auto text-white pt-2">
+                <h2 className="non-selectable text-[1rem] w-[80%]  mx-auto text-white pt-2">
                   Managing social media accounts to maximize reach
                 </h2>
               ) : null}
@@ -110,7 +110,7 @@ const Service = () => {
                 </h1>
               )}
               {ishover5 ? (
-                <h2 className="text-[1rem] w-[80%]  mx-auto text-white pt-2">
+                <h2 className="non-selectable text-[1rem] w-[80%]  mx-auto text-white pt-2">
                   Improving your websites performance and searc engine ranking
                 </h2>
               ) : null}

@@ -121,7 +121,7 @@ function YourComponent() {
 
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-primary sm:text-3xl">
-                        ok big nigga
+                        Nice Job
                       </p>
 
                       <p className="mt-4 leading-relaxed text-gray-700">

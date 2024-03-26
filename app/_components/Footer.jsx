@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="py-8 lg:py-16 lg:pe-16">
             <div className="hidden lg:block">
-              <Image src="/next.svg" width={100} height={100} alt="/" />
+              <Image src="/logo.png" width={100} height={100} alt="/" />
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">

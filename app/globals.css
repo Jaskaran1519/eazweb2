@@ -47,3 +47,7 @@
   background-color: black;
   transform-origin: top;
 }
+
+.non-selectable {
+  user-select: none;
+}
