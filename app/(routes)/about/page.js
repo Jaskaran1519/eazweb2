@@ -26,6 +26,7 @@ const page = () => {
         <Image src="/firebase.svg" width={75} height={75} alt="/" />
         <Image src="/ps.svg" width={75} height={75} alt="/" />
         <Image src="/blender.svg" width={75} height={75} alt="/" />
+        <Image src="/ai.svg" width={75} height={75} alt="/" />
       </div>
       <p className="text-[2.75vh] font-herofont font-light mt-2 leading-relaxed">
         At EazWeb, we're not just content with creating visually stunning
