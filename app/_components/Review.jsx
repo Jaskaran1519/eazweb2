@@ -108,7 +108,7 @@ function YourComponent() {
                   </div>
 
                   <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                    &mdash; Harry Uppal
+                    &mdash; Harry Uppal ( owner of Switchfixx Electricals )
                   </footer>
                 </blockquote>
               </div>
@@ -132,7 +132,7 @@ function YourComponent() {
                   </div>
 
                   <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                    &mdash; parminder singh
+                    &mdash; Parminder singh ( Digital teacher )
                   </footer>
                 </blockquote>
               </div>
@@ -145,7 +145,7 @@ function YourComponent() {
 
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-primary sm:text-3xl">
-                        Rajvarinder Singh
+                        Fantastic work
                       </p>
 
                       <p className="mt-4 leading-relaxed text-gray-700">
@@ -155,7 +155,7 @@ function YourComponent() {
                   </div>
 
                   <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                    &mdash; nigger banda
+                    &mdash; Ray swahli ( felina owner )
                   </footer>
                 </blockquote>
               </div>
