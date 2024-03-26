@@ -125,11 +125,8 @@ function YourComponent() {
                       </p>
 
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ullam vitae ducimus accusamus recusandae eius, id
-                        incidunt voluptatem et odio atque doloremque cupiditate,
-                        ea sunt officia minima, sint necessitatibus voluptatibus
-                        molestiae?
+                        Brilliant work guys, you made the management process of
+                        all the products very simple. Continue the good work
                       </p>
                     </div>
                   </div>
@@ -148,15 +145,11 @@ function YourComponent() {
 
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-primary sm:text-3xl">
-                        ok small nigga
+                        Rajvarinder Singh
                       </p>
 
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero deserunt quam voluptatem veritatis nulla enim
-                        eveniet dolore, facilis culpa similique aut rerum.
-                        Repudiandae ipsa voluptate dolorum consectetur illum
-                        incidunt doloribus.
+                        Great work and smooth management service.
                       </p>
                     </div>
                   </div>

@@ -79,7 +79,8 @@ const Accordion = () => {
           </svg>
         </summary>
         <p className="text-gray-600 mt-4">
-          We use the most updated tools to carft your product.
+          We use the most updated tools to carft your product , like Nextjs,
+          photoshop, blender and some highly efficient AI tools
         </p>
       </details>
     </div>
