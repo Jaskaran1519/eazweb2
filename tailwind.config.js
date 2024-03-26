@@ -16,6 +16,9 @@ module.exports = {
         primary: "#182825",
         hoverprimary: "#273633",
       },
+      fontFamily: {
+        herofont: ["var(--font-herofont)"],
+      },
     },
   },
   plugins: [],

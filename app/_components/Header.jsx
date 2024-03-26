@@ -9,18 +9,18 @@ const Header = () => {
   return (
     <div className="md:px-[10%] mx-auto h-auto bg-white bg-opacity-60  backdrop-blur-sm  filter">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, translateY: -50 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.2 }}
         className=" flex justify-between items-center p-3"
       >
-        <div>
+        <div className="overflow-hidden -mt-8">
           <Link href="/">
             <Image
               className="h-auto"
-              src="/next.svg"
-              width={100}
-              height={100}
+              src="/logo.png"
+              width={120}
+              height={120}
               alt="/"
             />
           </Link>

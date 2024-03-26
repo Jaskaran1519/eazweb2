@@ -9,12 +9,13 @@ const Hero = () => {
   return (
     <div className="text-primary">
       <motion.div
-        initial={{ opacity: 0, translateY: -100 }}
-        animate={{ opacity: 1, translateY: 0 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
+        onReset={true}
         className="mx-auto  mt-[10vh] md:w-[70%] xl:w-[60%]"
       >
-        <h1 className="text-[3rem] text-center  font-semibold font-mono leading-tight">
+        <h1 className="text-[3rem] text-center  font-semibold font-herofont leading-tight">
           We Analyse, Create and Innovate
         </h1>
         <h2 className=" w-[75%] hidden md:flex mt-4 mx-auto text-[1rem] text-center font-light">
