@@ -14,21 +14,51 @@ const page = () => {
         alt="/"
         className="mx-auto my-6"
       />
-      <p className="text-[2.75vh] font-herofont font-light mt-2 leading-relaxed">
+      <p className="text-[1.5em] font-herofont font-light mt-2 leading-relaxed">
         Welcome to EazWeb, your gateway to digital brilliance and innovation in
         the heart of Chandigarh, India's vibrant and burgeoning tech hub. As you
         step into our world, prepare to be immersed in a realm where creativity
         knows no bounds, where every pixel, every line of code, and every frame
         of video is meticulously crafted to perfection.
       </p>
-      <div className="flex my-10 justify-center gap-10">
-        <Image src="/next.svg" width={75} height={75} alt="/" />
-        <Image src="/firebase.svg" width={75} height={75} alt="/" />
-        <Image src="/ps.svg" width={75} height={75} alt="/" />
-        <Image src="/blender.svg" width={75} height={75} alt="/" />
-        <Image src="/ai.svg" width={75} height={75} alt="/" />
+      <div className="flex my-10 justify-center gap-5 flex-wrap">
+        <Image
+          src="/next.svg"
+          width={75}
+          height={75}
+          alt="/"
+          className="w-[15%] h-auto"
+        />
+        <Image
+          src="/firebase.svg"
+          width={75}
+          height={75}
+          alt="/"
+          className="w-[15%] h-auto"
+        />
+        <Image
+          src="/ps.svg"
+          width={75}
+          height={75}
+          alt="/"
+          className="w-[15%] h-auto"
+        />
+        <Image
+          src="/blender.svg"
+          width={75}
+          height={75}
+          alt="/"
+          className="w-[15%] h-auto"
+        />
+        <Image
+          src="/ai.svg"
+          width={75}
+          height={75}
+          alt="/"
+          className="w-[15%] h-auto"
+        />
       </div>
-      <p className="text-[2.75vh] font-herofont font-light mt-2 leading-relaxed">
+      <p className="text-[1.5em] font-herofont font-light mt-2 leading-relaxed">
         At EazWeb, we're not just content with creating visually stunning
         websites; we're dedicated to ensuring that they perform flawlessly
         across all devices and platforms. That's why we harness the power of

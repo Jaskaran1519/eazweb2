@@ -3,29 +3,29 @@ import React from "react";
 
 const cards = [
   {
-    title: "Mountain View",
-    copy: "Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains",
+    title: "Felina",
+    copy: "Beauty care products website",
 
     imageUrl: "/felina.webp",
     link: "https://felina-gilt.vercel.app/",
   },
   {
-    title: "To The Beach",
-    copy: "Plan your next beach trip with these fabulous destinations",
+    title: "Apex Footwear",
+    copy: "Modern footwear company",
 
     imageUrl: "/apex.webp",
     link: "http://n8river.github.io/ApexFootWear/",
   },
   {
-    title: "Desert Destinations",
-    copy: "It's the desert you've always dreamed of",
+    title: "Portfolio",
+    copy: "Developer's portfolios",
 
     imageUrl: "/port.webp",
     link: "https://jaskaran1519.github.io/Portfolio/",
   },
   {
-    title: "Explore The Galaxy",
-    copy: "Seriously, straight up, just blast off into outer space today",
+    title: "Team portfolio",
+    copy: "It is what is is, fellas",
 
     imageUrl: "/eazweb.webp",
     link: "https://jaskaran1519.github.io/Eazweb/",
