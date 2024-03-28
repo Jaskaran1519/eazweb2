@@ -14,14 +14,14 @@ const page = () => {
         alt="/"
         className="mx-auto my-6"
       />
-      <p className="text-[1.5em] font-herofont font-light mt-2 leading-relaxed">
+      <p className="text-[1.5em] font-herofont font-light mt-8 leading-relaxed">
         Welcome to EazWeb, your gateway to digital brilliance and innovation in
         the heart of Chandigarh, India's vibrant and burgeoning tech hub. As you
         step into our world, prepare to be immersed in a realm where creativity
         knows no bounds, where every pixel, every line of code, and every frame
         of video is meticulously crafted to perfection.
       </p>
-      <div className="flex my-10 justify-center gap-5 flex-wrap">
+      <div className="flex my-10 justify-center gap-4 md:gap-8 flex-wrap">
         <Image
           src="/next.svg"
           width={75}

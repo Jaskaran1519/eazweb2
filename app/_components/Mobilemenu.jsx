@@ -47,6 +47,10 @@ const Nav = () => {
               Home
             </Link>
             <hr />
+            <Link onClick={() => setIsOpen(!isOpen)} href="/service">
+              Service
+            </Link>
+            <hr />
             <Link onClick={() => setIsOpen(!isOpen)} href="/project">
               <h1>Our Work</h1>
             </Link>

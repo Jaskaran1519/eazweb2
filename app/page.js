@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "./_components/Hero";
 import Header from "./_components/Header";
-import Service from "./_components/Service";
+import Paragraph from "./_components/Paragraph";
+
 import Review from "./_components/Review";
 
 const page = () => {
@@ -11,7 +12,7 @@ const page = () => {
         <Header />
       </div>
       <Hero />
-      <Service />
+      <Paragraph />
       <Review />
     </div>
   );

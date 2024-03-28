@@ -27,7 +27,7 @@ const Header = () => {
         </div>
         <div className=" justify-between p-3 items-center text-primary gap-5 hidden sm:flex font-semibold">
           <h3>
-            <Link href="/">Services</Link>
+            <Link href="/service">Services</Link>
           </h3>
           <h3>
             <Link href="/about">About Us</Link>

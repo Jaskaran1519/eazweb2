@@ -11,7 +11,7 @@ const Service = () => {
   const [ishover5, setIshover5] = useState(false);
 
   return (
-    <div className="non-selectable w-[80%] mx-auto md:flex justify-between items-center mt-[5vh] xl:mt-[20vh]">
+    <div className="non-selectable w-[80%] mx-auto md:flex justify-between items-center mt-2 xl:mt-[5vh]">
       <motion.div
         initial={{ opacity: 0, translateY: -100 }}
         animate={{ opacity: 1, translateY: 0 }}
