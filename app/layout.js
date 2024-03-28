@@ -20,7 +20,7 @@ const inter = Fira_Sans_Condensed({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <div className="m-0">
           {children}
 

@@ -1,16 +1,10 @@
 "use client";
 import { useScroll, motion, useTransform } from "framer-motion";
-import { Edu_NSW_ACT_Foundation } from "next/font/google";
 import React, { useRef } from "react";
-const herofont = Edu_NSW_ACT_Foundation({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-herofont",
-});
 
 const Paragraph = () => {
   const paragraph =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis tempora nobis nihil atque iste sed voluptatibus, ea mollitia molestias adipisci consequatur, labore rerum cum?";
+    "Your online presence deserves a standing ovation. We build websites that are stunning, user-friendly, and drive results. Let's create something remarkable.";
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
@@ -21,7 +15,7 @@ const Paragraph = () => {
   return (
     <div className="w-full  h-auto my-[20vh] flex justify-center items-center ">
       <div
-        className="text-[2em]  text-primary p-3   mx-auto md:w-[70%] flex flex-wrap"
+        className="text-[2em] font-medium text-primary p-3   mx-auto md:w-[70%] flex flex-wrap"
         ref={element}
         style={{ opacity: scrollYProgress }}
       >

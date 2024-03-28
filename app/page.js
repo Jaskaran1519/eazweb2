@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./_components/Hero";
 import Header from "./_components/Header";
 import Paragraph from "./_components/Paragraph";
+import Stats from "./_components/Stats";
 
 import Review from "./_components/Review";
 
@@ -12,6 +13,7 @@ const page = () => {
         <Header />
       </div>
       <Hero />
+      <Stats />
       <Paragraph />
       <Review />
     </div>
