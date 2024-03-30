@@ -91,6 +91,7 @@ const Sliders = () => {
               content={d.content}
               icon={d.icon}
               toptitle={d.toptitle}
+              people={d.people}
             />
           ))}
         </Slider>
@@ -101,7 +102,7 @@ const Sliders = () => {
 
 export default Sliders;
 
-const Box = ({ heading, content, icon, toptitle }) => {
+const Box = ({ heading, content, icon, toptitle, people }) => {
   return (
     <div className="bg-gray-100 relative backdrop-blur-lg bg-cover text-primary h-[40vh] rounded-2xl mx-5 px-2 ">
       <div className=" roundedt-t-2xl p-2 flex items-center pt-5">
@@ -123,6 +124,10 @@ const Box = ({ heading, content, icon, toptitle }) => {
         <div className="flex items-center">
           <div className="w-44 h-6 bg-gray-200 rounded-full"></div>
           <ArrowRight />
+          <h1 className="text-gray-600 font-semibold ml-5 text-[0.8rem]">
+            {" "}
+            {people}+ people liked this{" "}
+          </h1>
         </div>
       </div>
     </div>
@@ -135,6 +140,7 @@ const data = [
     content: "Enables online sales and revenue generation",
     icon: <Home size={15} />,
     toptitle: "Business",
+    people: 20,
   },
   {
     heading: "Content Marketing",
@@ -142,6 +148,7 @@ const data = [
       "Publishing valuable content builds authority and attracts visitors.",
     icon: <Scale size={15} />,
     toptitle: "Marketing",
+    people: 12,
   },
   {
     heading: "Marketing",
@@ -149,6 +156,7 @@ const data = [
       "They serve as a platform to market your brand, products, and services",
     icon: <Store size={15} />,
     toptitle: "Sales",
+    people: 10,
   },
   {
     heading: "Credibility and Trust",
@@ -156,6 +164,7 @@ const data = [
       "A professionally designed website instills trust and credibility in your audience. It gives the impression that you are a legitimate and established entity",
     icon: <Handshake size={15} />,
     toptitle: "Trust",
+    people: 40,
   },
   {
     heading: "Scalability and Flexibility",
@@ -163,5 +172,6 @@ const data = [
       "Websites can grow and evolve with your business. You can easily update content, add new features, and expand functionality as your needs change over time",
     icon: <IconGrowth size={15} />,
     toptitle: "Scalability",
+    people: 30,
   },
 ];
