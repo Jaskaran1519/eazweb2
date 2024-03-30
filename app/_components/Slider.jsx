@@ -1,11 +1,18 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Slider from "react-slick";
+import { motion, useScroll } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowRight, Handshake, Home, Scale, Star, Store } from "lucide-react";
 import { IconGrowth } from "@tabler/icons-react";
 
 const Sliders = () => {
+  const element = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: element,
+    offset: ["start end", "start 0.4"],
+  });
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -75,9 +82,13 @@ const Sliders = () => {
   return (
     <div className="w-full h-auto mb-[10vh] ">
       <div className="w-[70vw] mx-auto mb-8 leading-normal ">
-        <h1 className="flex justify-center items-center font-herofont text-[2rem] md:text-[3rem] text-primary  font-semibold">
+        <motion.h1
+          ref={element}
+          style={{ opacity: scrollYProgress, fontSizeAdjust: scrollYProgress }}
+          className="flex justify-center items-center font-herofont text-[2rem] md:text-[3rem] text-primary  font-semibold"
+        >
           Why do this
-        </h1>
+        </motion.h1>
         <h2 className="text-center font-light text-[1rem] md:text-[2rem] text-primary">
           Its important to have a personal website for your respective business{" "}
         </h2>
