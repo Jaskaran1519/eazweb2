@@ -51,3 +51,10 @@
 .non-selectable {
   user-select: none;
 }
+.slick-prev,
+.slick-next {
+  color: black;
+  background-color: black;
+  border: black;
+  display: block;
+}

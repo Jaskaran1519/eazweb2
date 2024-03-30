@@ -6,7 +6,7 @@ import Paragraph from "./_components/Paragraph";
 import Stats from "./_components/Stats";
 import Lenis from "@studio-freight/lenis";
 import Review from "./_components/Review";
-
+import Slider from "./_components/Slider";
 const page = () => {
   useEffect(() => {
     const lenis = new Lenis();
@@ -30,6 +30,7 @@ const page = () => {
       <Hero />
       <Stats />
       <Paragraph />
+      <Slider />
       <Review />
     </div>
   );
