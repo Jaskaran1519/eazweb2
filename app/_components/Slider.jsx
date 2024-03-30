@@ -112,10 +112,12 @@ const Box = ({ heading, content, icon, toptitle }) => {
         <Star className="absolute top-5 right-5" />
       </div>
       <div>
-        <h1 className="p-3 text-[2rem] font-bold text-gray-800 ">{heading}</h1>
+        <h1 className="p-3 text-[1.5rem] font-bold text-gray-800 ">
+          {heading}
+        </h1>
       </div>
       <div>
-        <h2 className=" px-4 py-2 text-gray-600">{content}</h2>
+        <h2 className=" px-4 py-2 text-gray-600 text-[1rem]">{content}</h2>
       </div>
       <div className="absolute bottom-5 left-4 ">
         <div className="flex items-center">
