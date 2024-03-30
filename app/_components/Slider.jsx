@@ -73,9 +73,9 @@ const Sliders = () => {
     ],
   };
   return (
-    <div className="w-full h-auto mb-10 ">
+    <div className="w-full h-auto mb-[10vh] ">
       <div className="w-[70vw] mx-auto mb-8 leading-normal ">
-        <h1 className="flex justify-center items-center text-[2rem] md:text-[3rem] text-primary  font-semibold">
+        <h1 className="flex justify-center items-center font-herofont text-[2rem] md:text-[3rem] text-primary  font-semibold">
           Why do this
         </h1>
         <h2 className="text-center font-light text-[1rem] md:text-[2rem] text-primary">
@@ -121,8 +121,8 @@ const Box = ({ heading, content, icon, toptitle, people }) => {
         <h2 className=" px-4 py-2 text-gray-600 text-[1rem]">{content}</h2>
       </div>
       <div className="absolute bottom-5 left-4 ">
-        <div className="flex items-center">
-          <div className="w-44 h-6 bg-gray-200 rounded-full"></div>
+        <div className="flex items-center ">
+          <div className=" h-6 w-32 bg-gray-200 rounded-full"></div>
           <ArrowRight />
           <h1 className="text-gray-600 font-semibold ml-5 text-[0.8rem]">
             {" "}
@@ -137,7 +137,8 @@ const Box = ({ heading, content, icon, toptitle, people }) => {
 const data = [
   {
     heading: "E-commerce",
-    content: "Enables online sales and revenue generation",
+    content:
+      "E-commerce lets you to sell to anyone with an internet connection, 24/7. This expands your reach beyond local limitations, increases sales potential",
     icon: <Home size={15} />,
     toptitle: "Business",
     people: 20,
@@ -145,7 +146,7 @@ const data = [
   {
     heading: "Content Marketing",
     content:
-      "Publishing valuable content builds authority and attracts visitors.",
+      "Website content like articles and videos attracts customers seeking info keeps them engaged. This boosts SEO and fosters loyalty for long-term growth",
     icon: <Scale size={15} />,
     toptitle: "Marketing",
     people: 12,
@@ -153,7 +154,7 @@ const data = [
   {
     heading: "Marketing",
     content:
-      "They serve as a platform to market your brand, products, and services",
+      "Website marketing showcases your brand, attracts leads, and converts them to customers, all in one online hub",
     icon: <Store size={15} />,
     toptitle: "Sales",
     people: 10,
