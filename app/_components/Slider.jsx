@@ -115,7 +115,7 @@ export default Sliders;
 
 const Box = ({ heading, content, icon, toptitle, people }) => {
   return (
-    <div className="bg-gray-100 relative backdrop-blur-lg bg-cover text-primary h-[40vh] rounded-2xl mx-5 px-2 ">
+    <div className="bg-gray-100 relative backdrop-blur-lg bg-cover text-primary h-auto rounded-2xl mx-5 px-2 ">
       <div className=" roundedt-t-2xl p-2 flex items-center pt-5">
         <div className="p-2 bg-gray-200 rounded-full">{icon}</div>
         <div className="text-md font-semibold ml-5 py-1 px-3 bg-gray-200 rounded-full">
@@ -131,9 +131,9 @@ const Box = ({ heading, content, icon, toptitle, people }) => {
       <div>
         <h2 className=" px-4 py-2 text-gray-600 text-[1rem]">{content}</h2>
       </div>
-      <div className="absolute bottom-5 left-4 ">
+      <div className="pb-4 mt-6 ml-3 ">
         <div className="flex items-center ">
-          <div className=" h-6 w-32 bg-gray-200 rounded-full"></div>
+          <div className=" h-6 w-20 bg-gray-200 rounded-full"></div>
           <ArrowRight />
           <h1 className="text-gray-600 font-semibold ml-5 text-[0.8rem]">
             {" "}
