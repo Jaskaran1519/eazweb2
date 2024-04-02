@@ -55,7 +55,7 @@ const Hero = () => {
             initial={{ opacity: 0, translateY: 100 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.5, delay: 0 }}
-            className=" overflow-hidden  flex scale-100 hover:scale-105 duration-150 relative my-4  w-[80vw] h-[70vw]  rounded-xl lg:w-[30vw] lg:h-[27vw] xl:h-[23vw] border shadow-2xl xl:rounded-[5vh]"
+            className=" overflow-hidden  flex scale-100 hover:scale-105 duration-150 relative my-4  w-[90vw] h-[70vw]  rounded-xl lg:w-[30vw] lg:h-[27vw] xl:h-[23vw] border shadow-2xl xl:rounded-[5vh]"
           >
             <Image
               src="/centerbox.svg"
@@ -68,20 +68,27 @@ const Hero = () => {
                 Lets Connect
               </h1>
               <div className="flex justify-center gap-[15%] mt-[20%] ">
-                <Image
-                  src="/instagram.svg"
-                  className="rounded-lg"
-                  width={40}
-                  height={40}
-                  alt="/"
-                />
-                <Image
-                  src="/whatsapp.svg"
-                  className="rounded-lg"
-                  width={40}
-                  height={40}
-                  alt="/"
-                />
+                <a
+                  href="https://www.instagram.com/eazweb?igsh=ZW1oMnE5MGVlZmpz"
+                  target="_blank"
+                >
+                  <Image
+                    src="/instagram.svg"
+                    className="rounded-lg"
+                    width={40}
+                    height={40}
+                    alt="/"
+                  />
+                </a>
+                <a href="" target="_blank">
+                  <Image
+                    src="/whatsapp.svg"
+                    className="rounded-lg"
+                    width={40}
+                    height={40}
+                    alt="/"
+                  />
+                </a>
               </div>
               <div className="mt-[5%] flex justify-between">
                 <Image

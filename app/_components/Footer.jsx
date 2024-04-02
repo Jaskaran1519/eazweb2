@@ -1,8 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const showPopup = () => {
+    setIsOpen(true);
+  };
+
+  const hidePopup = () => {
+    setIsOpen(false);
+  };
+
+  const handleOption1 = () => {
+    alert("Option 1 selected");
+    hidePopup();
+  };
+
+  const handleOption2 = () => {
+    alert("Option 2 selected");
+    hidePopup();
+  };
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -55,12 +75,43 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
-                      href="tel:+916284607938"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      Call us now
-                    </a>
+                    <div className="relative">
+                      {/* Button to trigger the popup */}
+                      <button
+                        onClick={showPopup}
+                        className="text-primary"
+                        type="button"
+                      >
+                        Call now
+                      </button>
+
+                      {/* Popup box */}
+                      {isOpen && (
+                        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
+                          <h2 className="text-lg font-semibold mb-4">
+                            Call now
+                          </h2>
+                          <a href="tel:+916284607938">
+                            <button className="text-primary bg-white hover:bg-gray-100 border border-gray-300 rounded-lg px-4 py-2 mr-2">
+                              +91 6284607938
+                            </button>
+                          </a>
+                          <a href="tel:+917341138757">
+                            <button className="text-primary bg-white hover:bg-gray-100 border border-gray-300 rounded-lg px-4 py-2 mr-2">
+                              +91 7341138757
+                            </button>
+                          </a>
+                        </div>
+                      )}
+
+                      {/* Overlay to darken the background when the popup is displayed */}
+                      {isOpen && (
+                        <div
+                          onClick={hidePopup}
+                          className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"
+                        ></div>
+                      )}
+                    </div>
                   </li>
 
                   <li>
@@ -74,7 +125,8 @@ const Footer = () => {
 
                   <li>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/eazweb?igsh=ZW1oMnE5MGVlZmpz"
+                      target="_blank"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Instagram
@@ -92,7 +144,8 @@ const Footer = () => {
 
                   <li>
                     <a
-                      href="#"
+                      href="https://github.com/Jaskaran1519"
+                      target="_blank"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Github

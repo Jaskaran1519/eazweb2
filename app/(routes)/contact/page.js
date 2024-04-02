@@ -21,7 +21,10 @@ const page = () => {
               className="rounded-full w-[10vh] h-auto"
             />
           </a>
-          <a>
+          <a
+            href="https://www.instagram.com/eazweb?igsh=ZW1oMnE5MGVlZmpz"
+            target="_blank"
+          >
             <Image
               src="/instagram.svg"
               width={75}
