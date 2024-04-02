@@ -87,7 +87,7 @@ const Footer = () => {
 
                       {/* Popup box */}
                       {isOpen && (
-                        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
+                        <div className="w-[60vw] sm:w-[30vw] flex flex-col justify-center items-center space-y-3 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
                           <h2 className="text-lg font-semibold mb-4">
                             Call now
                           </h2>
