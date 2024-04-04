@@ -58,12 +58,12 @@ const Hero = () => {
             className=" overflow-hidden  flex scale-100 hover:scale-105 duration-150 relative my-4  w-[90vw] h-[70vw]  rounded-xl lg:w-[30vw] lg:h-[27vw] xl:h-[23vw] border shadow-2xl xl:rounded-[5vh]"
           >
             <Image
-              src="/centerbox.svg"
+              src="/herobg.jpg"
               layout="fill"
               className="absolute inset-0 w-full h-full object-cover z-0"
               alt="/"
             />
-            <div className="w-[80%]  absolute translate-x-[12.5%] top-4">
+            {/* <div className="w-[80%]  absolute translate-x-[12.5%] top-4">
               <h1 className="flex justify-center text-[2rem] text-primary font-bold">
                 Lets Connect
               </h1>
@@ -111,7 +111,7 @@ const Hero = () => {
                   <Link href="/contact">Lets Go</Link>
                 </button>
               </div>
-            </div>
+            </div> */}
           </motion.div>
           <Link href="/project">
             <motion.div
