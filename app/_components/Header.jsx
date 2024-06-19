@@ -14,7 +14,7 @@ const Header = () => {
         transition={{ duration: 0.2 }}
         className=" flex justify-between items-center p-3"
       >
-        <div className="overflow-hidden -mt-8">
+        <div className="overflow-hidden ">
           <Link href="/">
             <Image
               className="h-auto"
