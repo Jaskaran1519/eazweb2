@@ -1,6 +1,8 @@
 import { Edu_NSW_ACT_Foundation, Fira_Sans_Condensed } from "next/font/google";
 import "./globals.css";
 import Footer from "./_components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const herofont = Edu_NSW_ACT_Foundation({
   subsets: ["latin"],
@@ -22,6 +24,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="m-0">
+          <SpeedInsights />
+          <Analytics />
           {children}
 
           <Footer />
