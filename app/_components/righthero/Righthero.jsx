@@ -68,9 +68,9 @@ const Righthero = () => {
           </div>
         </div>
         <div className="text_404">
-          <div className="text_4041">4</div>
-          <div className="text_4042">0</div>
-          <div className="text_4043">4</div>
+          <div className="text_4041">E</div>
+          <div className="text_4042">A</div>
+          <div className="text_4043">Z</div>
         </div>
       </div>
       <Herobutton />

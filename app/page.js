@@ -6,10 +6,8 @@ import Header from "./_components/Header";
 import Paragraph from "./_components/Paragraph";
 import Stats from "./_components/Stats";
 import Lenis from "@studio-freight/lenis";
-import Review from "./_components/Review";
+import Review1 from "./_components/Review1";
 import Slider from "./_components/Slider";
-import Curve from "./_components/Curve";
-import Image from "next/image";
 
 const Page = () => {
   useEffect(() => {
@@ -24,7 +22,7 @@ const Page = () => {
   }, []);
 
   const fadeInVariant = {
-    hidden: { opacity: 0, y: 50 }, // Start off the screen slightly below
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
@@ -57,14 +55,14 @@ const Page = () => {
         <Paragraph />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={fadeInVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
         <Slider />
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         variants={fadeInVariant}
@@ -72,7 +70,7 @@ const Page = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <Review />
+        <Review1 />
       </motion.div>
     </div>
   );
