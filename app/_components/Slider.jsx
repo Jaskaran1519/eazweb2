@@ -80,11 +80,11 @@ const Sliders = () => {
     ],
   };
   return (
-    <div className="w-full h-auto mb-[10vh] ">
+    <div className="w-[90%] mx-auto h-auto mb-[10vh] ">
       <div className="w-[70vw] mx-auto mb-8 leading-normal ">
         <motion.h1
           ref={element}
-          style={{ opacity: scrollYProgress, fontSizeAdjust: scrollYProgress }}
+          style={{ opacity: scrollYProgress }}
           className="flex justify-center items-center font-herofont text-[2rem] md:text-[3rem] text-primary  font-semibold"
         >
           Why do this

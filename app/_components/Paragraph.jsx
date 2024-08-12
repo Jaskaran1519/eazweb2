@@ -13,7 +13,7 @@ const Paragraph = () => {
   const words = paragraph.split(" ");
 
   return (
-    <div className="w-full  h-auto my-[20vh] flex justify-center items-center ">
+    <div className="w-[90%] mx-auto  h-auto my-[20vh] flex justify-center items-center ">
       <div
         className="text-[2em] font-medium text-primary p-3   mx-auto md:w-[70%] flex flex-wrap"
         ref={element}

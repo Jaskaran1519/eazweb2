@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import Header from "../_components/Header";
+import Secondaryheader from '../_components/Secondaryheader' 
 import Lenis from "@studio-freight/lenis";
 
 const layout = ({ children }) => {
@@ -19,12 +19,15 @@ const layout = ({ children }) => {
     requestAnimationFrame(raf);
   });
   return (
-    <div className="w-[90%] mx-auto">
+    <>
       <div className="sticky top-0 z-50">
-        <Header />
+        <Secondaryheader />
       </div>
+      <div  className="w-[90%] mx-auto">
+
       {children}
-    </div>
+      </div>
+    </>
   );
 };
 

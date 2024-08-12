@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="mt-[5vh] py-24 sm:py-32 bg-slate-50 ">
+    <div className="mt-[5vh] w-[90%] mx-auto py-24 sm:py-32 bg-slate-50 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center  space-y-4">

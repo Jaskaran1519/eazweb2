@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <ContactForm />
-      <div className="mx-auto w-full h-auto ">
+      {/* <div className="mx-auto w-full h-auto ">
         <h1 className="flex justify-center items-center p-5 text-[2rem] font-semibold">
           Other ways to connect
         </h1>
@@ -43,7 +43,7 @@ const page = () => {
             />
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
