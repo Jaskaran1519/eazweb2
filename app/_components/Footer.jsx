@@ -27,42 +27,13 @@ const Footer = () => {
     <footer className="bg-gray-200">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2">
-          <div className="border-b border-gray-100 py-8 lg:order-last lg:border-b-0 lg:border-s lg:py-16 lg:ps-16">
-            <div className="mt-8 space-y-4 lg:mt-0">
-              <span className="hidden h-1 w-10 rounded bg-primary lg:block"></span>
-
-              <div>
-                <h2 className="text-2xl font-medium text-primary">
-                  Request a Demo
-                </h2>
-
-                <p className="mt-4 max-w-lg text-primary">
-                  If you want to know more or want to talk about something, just
-                  drop your email. We will get back to you as fast as we can.
-                </p>
-              </div>
-
-              <form className="mt-6 w-full">
-                <label htmlFor="UserEmail" className="sr-only">
-                  {" "}
-                  Email{" "}
-                </label>
-
-                <div className="rounded-md border border-gray-100 p-2 focus-within:ring sm:flex sm:items-center sm:gap-4">
-                  <input
-                    type="email"
-                    id="UserEmail"
-                    placeholder="john@rhcp.com"
-                    className="w-full border-gray-300 focus:border-transparent focus:ring-transparent sm:text-sm"
-                  />
-
-                  <button className="mt-1 w-full rounded bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-hoverprimary sm:mt-0 sm:w-auto sm:shrink-0">
-                    Sign Up
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+          <Image
+            src="/logo.png"
+            width={150}
+            height={150}
+            alt=""
+            className="pt-10"
+          />
 
           <div className="py-8 lg:py-16 lg:pe-16">
             <div className="hidden lg:block -ml-2">

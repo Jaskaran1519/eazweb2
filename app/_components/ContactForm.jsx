@@ -11,6 +11,8 @@ const ContactForm = () => {
     message: "",
   });
 
+  const [notification, setNotification] = useState(null);
+
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
@@ -28,9 +30,28 @@ const ContactForm = () => {
         },
       });
 
-      console.log("Email sent successfully:", response.data);
+      // Clear the form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+
+      // Show the notification
+      setNotification("Email sent successfully!");
+
+      // Hide the notification after 3 seconds
+      setTimeout(() => {
+        setNotification(null);
+      }, 3000);
     } catch (error) {
       console.error("Error sending email:", error);
+      setNotification("Failed to send email.");
+      setTimeout(() => {
+        setNotification(null);
+      }, 3000);
     }
   };
 
@@ -138,6 +159,11 @@ const ContactForm = () => {
               Send message
             </button>
           </form>
+          {notification && (
+            <div className="mt-4 p-4 text-center bg-green-100 text-green-800 rounded-lg shadow-sm">
+              {notification}
+            </div>
+          )}
         </div>
       </section>
     </div>
