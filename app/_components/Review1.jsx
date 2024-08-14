@@ -47,7 +47,7 @@ const ReviewCard = ({ img, name, username, body }) => {
   return (
     <figure
       className={cn(
-        "relative w-64  cursor-pointer overflow-hidden rounded-xl container border p-10",
+        "relative w-64  cursor-pointer overflow-hidden rounded-xl container1 border p-10",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles

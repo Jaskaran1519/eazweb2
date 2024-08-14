@@ -24,42 +24,33 @@ const Footer = () => {
     hidePopup();
   };
   return (
-    <footer className="bg-gray-200">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <footer className="">
+      <div className="mx-auto w-full">
         <div className="lg:grid lg:grid-cols-2">
-          <Image
-            src="/logo.png"
-            width={150}
-            height={150}
-            alt=""
-            className="pt-10"
-          />
-
-          <div className="py-8 lg:py-16 lg:pe-16">
+          <div className="container hidden lg:flex justify-center items-center relative">
+            <Image src="/whitelogo.png" width={300} height={300} alt="" />
+          </div>
+          <div className="py-8 lg:py-16 lg:pe-16 lg:pl-10 bg-[#201E1F] text-white">
             <div className="hidden lg:block -ml-2">
-              <Image src="/logo.png" width={120} height={120} alt="/" />
+              <Image src="/whitelogo.png" width={120} height={120} alt="/" />
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
               <div>
-                <p className="font-medium text-gray-900">Services</p>
+                <p className="font-medium ">Services</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <div className="relative">
                       {/* Button to trigger the popup */}
-                      <button
-                        onClick={showPopup}
-                        className="text-primary"
-                        type="button"
-                      >
+                      <button onClick={showPopup} className="" type="button">
                         Call now
                       </button>
 
                       {/* Popup box */}
                       {isOpen && (
                         <div className="w-[60vw] sm:w-[30vw] flex flex-col justify-center items-center space-y-3 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
-                          <h2 className="text-lg font-semibold mb-4">
+                          <h2 className="text-lg font-semibold mb-4 text-black">
                             Call now
                           </h2>
                           <a href="tel:+916284607938">
@@ -86,10 +77,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
+                    <a href="#" className=" transition hover:opacity-75">
                       Twitter
                     </a>
                   </li>
@@ -98,17 +86,14 @@ const Footer = () => {
                     <a
                       href="https://www.instagram.com/eazweb?igsh=ZW1oMnE5MGVlZmpz"
                       target="_blank"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       Instagram
                     </a>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
+                    <a href="#" className=" transition hover:opacity-75">
                       Upwork
                     </a>
                   </li>
@@ -117,7 +102,7 @@ const Footer = () => {
                     <a
                       href="https://github.com/Jaskaran1519"
                       target="_blank"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       Github
                     </a>
@@ -126,13 +111,13 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Company</p>
+                <p className="font-medium ">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <Link
                       href="/about"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       {" "}
                       About{" "}
@@ -142,7 +127,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       Talk to us
                     </Link>
@@ -151,13 +136,13 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Helpful Links</p>
+                <p className="font-medium ">Helpful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <Link
                       href="/contact"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       {" "}
                       Contact{" "}
@@ -165,10 +150,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="/faq"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
+                    <a href="/faq" className=" transition hover:opacity-75">
                       {" "}
                       FAQs{" "}
                     </a>
@@ -177,7 +159,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/livechat"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className=" transition hover:opacity-75"
                     >
                       {" "}
                       Live Chat{" "}

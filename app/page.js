@@ -7,8 +7,10 @@ import Paragraph from "./_components/Paragraph";
 import Stats from "./_components/Stats";
 import Lenis from "@studio-freight/lenis";
 import Review1 from "./_components/Review1";
-import Slider from "./_components/Slider";
-import Parallax from "./_components/parallax/Parallax";
+import Parallax1 from "./_components/parallax/Parallax1";
+import Parallax2 from "./_components/parallax/Parallax2";
+import Parallax3 from "./_components/parallax/Parallax3";
+import Parallax4 from "./_components/parallax/Parallax4";
 
 const Page = () => {
   useEffect(() => {
@@ -32,11 +34,11 @@ const Page = () => {
   };
 
   return (
-    <div className="w-full z-0">
+    <div className="w-full z-0 bg-[#FFFFF2] overflow-hidden">
       <div className="bg-[#1f1e1c]">
         <Header />
       </div>
-      <div className="bg-[#1f1e1c] z-10 w-full  overflow-hidden">
+      <div className="bg-[#1f1e1c] z-10 w-full xl:min-h-[90vh]  overflow-hidden">
         <Hero />
       </div>
 
@@ -57,6 +59,10 @@ const Page = () => {
       >
         <Paragraph />
       </motion.div>
+      <Parallax1 />
+      <Parallax2 />
+      <Parallax3 />
+      <Parallax4 />
 
       <motion.div
         variants={fadeInVariant}

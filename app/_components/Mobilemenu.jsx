@@ -70,13 +70,13 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-blue-200 text-black p-10 z-100" // Increased z-index
+            className="fixed left-0 top-0 w-full h-screen origin-top text-white bg-black p-10 z-100" // Increased z-index
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <Image src="/logo.png" height={200} width={200} alt="" />
+                <Image src="/whitelogo.png" height={200} width={200} alt="" />
                 <p
-                  className="cursor-pointer text-md text-black"
+                  className="cursor-pointer text-md text-white"
                   onClick={toggleMenu}
                 >
                   <X size={50} />
@@ -128,7 +128,7 @@ const MobileNavLink = ({ title, href, toggleMenu }) => {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-black"
+      className="text-5xl uppercase text-white"
       onClick={toggleMenu}
     >
       <Link href={href}>{title}</Link>
