@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="md:px-[5%] w-full mx-auto h-auto bg-transparent  z-50">
+    <div className=" px-5 md:px-[5%] w-full mx-auto h-auto bg-transparent  z-50">
       <motion.div
         initial={{ opacity: 0, translateY: -50 }}
         animate={{ opacity: 1, translateY: 0 }}

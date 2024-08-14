@@ -13,8 +13,8 @@ const Card = ({ title, copy, imageUrl, link }) => {
     <div className="relative group overflow-hidden rounded-xl">
       <Image
         src={`/projects${imageUrl}`}
-        width={2000}
-        height={2000}
+        width={1000}
+        height={1000}
         alt={title}
         className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
       />
@@ -22,13 +22,13 @@ const Card = ({ title, copy, imageUrl, link }) => {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:opacity-100 transition-opacity duration-300 ease-in-out opacity-0"></div>
       {/* Title */}
       <h1
-        className={` ${fontmain.className} absolute bottom-[5%] left-[5%] text-white text-[6vw] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100`}
+        className={` ${fontmain.className} absolute bottom-[5%] left-[5%] text-white text-[5vw] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100`}
       >
         {title}
       </h1>
       {/* Button */}
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <button className="absolute  top-[5%] right-[5%] border-[2px] border-white rounded-full px-5 py-3 text-3xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 flex items-center gap-4">
+        <button className="absolute  top-[5%] right-[5%] border-[2px] border-white rounded-full px-5 py-3 text-2xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 flex items-center gap-4">
           Visit
           <ArrowUpRight />
         </button>
@@ -64,17 +64,17 @@ const App = () => {
       link: "https://sharelit.vercel.app",
     },
     {
-      title:'Qiuzesty',
-      copy:'',
-      imageUrl:'/quizesty.webp',
-      link:'http://quizesty.vercel.app'
+      title: "Qiuzesty",
+      copy: "",
+      imageUrl: "/quizesty.webp",
+      link: "http://quizesty.vercel.app",
     },
     {
-      title:'Apex footwear',
-      copy:'',
-      imageUrl:'/apex.webp',
-      link:'https://n8river.github.io/ApexFootWear/'
-    }
+      title: "Apex footwear",
+      copy: "",
+      imageUrl: "/apex.webp",
+      link: "https://n8river.github.io/ApexFootWear/",
+    },
   ];
 
   return (
@@ -83,7 +83,7 @@ const App = () => {
         Some of our work
       </h1>
       <div className="flex justify-center items-center h-auto mt-10">
-        <div className="flex flex-col gap-[10vh]">
+        <div className=" w-[80%] flex flex-col gap-[10vh]">
           {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
