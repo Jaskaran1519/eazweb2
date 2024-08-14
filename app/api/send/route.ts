@@ -1,39 +1,25 @@
-import nodemailer from "nodemailer";
-import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import EmailTemplate from "../../_components/EmailTemplate";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
-    const body = await request.json();
-    const { email, subject, message } = body;
+    const { name, email, phone, subject, message } = await request.json();
 
-    // Logging the received body
-    console.log("Received body:", body);
-
-    // Create a transporter object
-    let transporter = nodemailer.createTransport({
-      service: "Gmail", // or another email service
-      auth: {
-        user: process.env.EMAIL_USER, // your email
-        pass: process.env.EMAIL_PASS, // your email password
-      },
+    const { data, error } = await resend.emails.send({
+      from: `Acme <onboarding@resend.dev>`,
+      to: ["eazwebcreates@gmail.com"],
+      subject: subject,
+      react: EmailTemplate({ name, phone, message, email }),
     });
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: subject,
-      text: message,
-    };
+    if (error) {
+      return Response.json({ error }, { status: 500 });
+    }
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Email sent:", info);
-
-    return NextResponse.json({ success: true, info });
+    return Response.json(data);
   } catch (error) {
-    console.error("Error sending email:", error);
-    return NextResponse.json(
-      { success: false, error: error.message },
-      { status: 500 }
-    );
+    return Response.json({ error }, { status: 500 });
   }
 }

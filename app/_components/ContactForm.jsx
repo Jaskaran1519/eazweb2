@@ -1,9 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -45,10 +48,27 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit} className="space-y-8">
             <div>
               <label
+                htmlFor="name"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div>
+              <label
                 htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900"
               >
-                Your email
+                Your Email
               </label>
               <input
                 type="email"
@@ -57,6 +77,23 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                 placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="phone"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
+                Your Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="Your Phone Number"
                 required
               />
             </div>
@@ -82,7 +119,7 @@ const ContactForm = () => {
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900"
               >
-                Your message
+                Your Message
               </label>
               <textarea
                 id="message"
