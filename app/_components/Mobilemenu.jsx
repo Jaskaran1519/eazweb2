@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="flex justify-between items-center py-8 lg:py-4 px-2 z-50">
+      <nav className="flex justify-between items-center py-8 lg:py-4 px-2 z-40">
         <div className="bg-[url('/menusvg.svg')] bg-cover bg-no-repeat">
           <div
             className="cursor-pointer text-md text-black"

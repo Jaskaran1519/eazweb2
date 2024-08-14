@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import axios from "axios";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

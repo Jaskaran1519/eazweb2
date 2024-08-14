@@ -26,7 +26,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className="bg-[url('/menusvg.svg')] w-20 h-20  flex justify-center items-center">
+        <div className="bg-[url('/menusvg.svg')] w-20 h-20 z-20 flex justify-center items-center">
           <Mobilemenu />
         </div>
       </motion.div>

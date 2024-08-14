@@ -8,6 +8,7 @@ import Stats from "./_components/Stats";
 import Lenis from "@studio-freight/lenis";
 import Review1 from "./_components/Review1";
 import Slider from "./_components/Slider";
+import Parallax from "./_components/parallax/Parallax";
 
 const Page = () => {
   useEffect(() => {
@@ -32,8 +33,10 @@ const Page = () => {
 
   return (
     <div className="w-full z-0">
-      <div className="bg-[#1f1e1c] z-10 w-full relative overflow-hidden">
+      <div className="bg-[#1f1e1c]">
         <Header />
+      </div>
+      <div className="bg-[#1f1e1c] z-10 w-full  overflow-hidden">
         <Hero />
       </div>
 
@@ -54,15 +57,6 @@ const Page = () => {
       >
         <Paragraph />
       </motion.div>
-
-      {/* <motion.div
-        variants={fadeInVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <Slider />
-      </motion.div> */}
 
       <motion.div
         variants={fadeInVariant}
