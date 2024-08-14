@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="container hidden lg:flex justify-center items-center relative">
             <Image src="/whitelogo.png" width={300} height={300} alt="" />
           </div>
-          <div className="py-8 lg:py-16 lg:pe-16 lg:pl-10 bg-[#201E1F] text-white">
+          <div className="py-8 lg:py-16 lg:pe-16 pl-10 bg-[#201E1F] text-white">
             <div className="hidden lg:block -ml-2">
               <Image src="/whitelogo.png" width={120} height={120} alt="/" />
             </div>
