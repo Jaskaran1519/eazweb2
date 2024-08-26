@@ -64,6 +64,12 @@ const App = () => {
       link: "https://sharelit.vercel.app",
     },
     {
+      title: "Real Estate",
+      copy: "It is what it is, fellas",
+      imageUrl: "/realestate.png",
+      link: "https://real-estate-web.pages.dev/",
+    },
+    {
       title: "Qiuzesty",
       copy: "",
       imageUrl: "/quizesty.webp",
