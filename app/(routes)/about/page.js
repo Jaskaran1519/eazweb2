@@ -3,8 +3,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="w-[90%] mx-auto">
-      <h1 className="text-[2em] font-herofont font-semibold text-primary mt-5">
+    <div className="w-[90%] mx-auto mb-20">
+      <h1 className="text-[2em] font-herofont font-semibold text-primary mt-5 ">
         Who we really are...
       </h1>
       <Image
