@@ -11,6 +11,7 @@ import Parallax1 from "./_components/parallax/Parallax1";
 import Parallax2 from "./_components/parallax/Parallax2";
 import Parallax3 from "./_components/parallax/Parallax3";
 import Parallax4 from "./_components/parallax/Parallax4";
+import Link from "next/link";
 
 const Page = () => {
   useEffect(() => {
@@ -63,6 +64,11 @@ const Page = () => {
       <Parallax2 />
       <Parallax3 />
       <Parallax4 />
+      <Link href="/project">
+        <button className="-mt-10 mx-auto border-[1px] border-black px-5 py-2 rounded-lg flex justify-center items-center">
+          More Work
+        </button>
+      </Link>
 
       <motion.div
         variants={fadeInVariant}
