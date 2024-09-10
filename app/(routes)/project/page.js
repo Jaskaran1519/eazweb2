@@ -40,12 +40,6 @@ const Card = ({ title, copy, imageUrl, link }) => {
 const App = () => {
   const cards = [
     {
-      title: "Felina",
-      copy: "Beauty care products website",
-      imageUrl: "/felina.webp",
-      link: "https://felina1519.vercel.app/",
-    },
-    {
       title: "Ricaverse",
       copy: "Developer's portfolios",
       imageUrl: "/ricaverse.webp",
@@ -68,6 +62,12 @@ const App = () => {
       copy: "Modern footwear company",
       imageUrl: "/jenn.png",
       link: "https://www.thelabeljenn.com/",
+    },
+    {
+      title: "Felina",
+      copy: "Beauty care products website",
+      imageUrl: "/felina.webp",
+      link: "https://felina1519.vercel.app/",
     },
     {
       title: "Sharelit",
