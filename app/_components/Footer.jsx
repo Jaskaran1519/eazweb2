@@ -155,16 +155,6 @@ const Footer = () => {
                       FAQs{" "}
                     </a>
                   </li>
-
-                  <li>
-                    <Link
-                      href="/livechat"
-                      className=" transition hover:opacity-75"
-                    >
-                      {" "}
-                      Live Chat{" "}
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>

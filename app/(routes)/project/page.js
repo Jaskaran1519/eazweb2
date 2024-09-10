@@ -52,10 +52,22 @@ const App = () => {
       link: "https://ricaverse.in",
     },
     {
+      title: "Worsst",
+      copy: "Clothing Website",
+      imageUrl: "/worsst.png",
+      link: "https://www.worsst.com/",
+    },
+    {
       title: "Portfolio",
       copy: "Modern footwear company",
       imageUrl: "/portfolio.webp",
       link: "https://jaskaran1519.vercel.app",
+    },
+    {
+      title: "Jenn",
+      copy: "Modern footwear company",
+      imageUrl: "/jenn.png",
+      link: "https://www.thelabeljenn.com/",
     },
     {
       title: "Sharelit",
